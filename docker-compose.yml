@@ -1,0 +1,17 @@
+
+services:
+  mariadb:
+    image: mariadb:10.6
+    container_name: mariadb_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456789*
+      MYSQL_DATABASE: openpay
+      MYSQL_USER: user_openpay
+      MYSQL_PASSWORD: 123456789*
+      MYSQL_ROOT_HOST: '%'  # Permite conexiones desde cualquier host
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./database:/var/lib/mysql
+
