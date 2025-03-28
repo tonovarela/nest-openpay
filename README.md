@@ -26,7 +26,7 @@ This is a REST API built with NestJS for managing credit cards using the Open Pa
 1.  Clone the repository:
 
     ```bash
-    git clone
+    git clone 
     cd nest-open-pay
     ```
 
